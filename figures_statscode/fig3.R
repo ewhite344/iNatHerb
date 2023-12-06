@@ -7,7 +7,6 @@ library(tidyverse)
 
 ##FIG3 
 #read in score data (from ImageAnt scoring process) with scores counted
-totalscores <- read.csv("https://raw.githubusercontent.com/ewhite344/iNatHerb/main/total_rawdata.csv", sep = ',')
 
 totalscores <- totalscores %>%
   filter(taxonomic_identification == "1" | taxonomic_identification == "0" | taxonomic_identification == "U" | taxonomic_identification == "O")%>%

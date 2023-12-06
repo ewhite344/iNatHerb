@@ -6,7 +6,7 @@ rm(list = ls())
 library(tidyverse)
 
 #read in raw score data (from ImageAnt scoring process)
-total <- read.csv("https://raw.githubusercontent.com/ewhite344/iNatHerb/main/total_rawdata.csv", sep = ',')
+total <- read.csv("https://raw.githubusercontent.com/ewhite344/iNatHerb/main/total_rawscores.csv", sep = ',')
 
 #add column with counts of how many IDs were scored 'correct'
 total2 <- total%>%
